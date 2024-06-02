@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/payment.php", "use": "@vercel/php" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/payment.php" }
+  ]
+}

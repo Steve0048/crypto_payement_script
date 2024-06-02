@@ -8,12 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'currency' => $data['currency'],
         'amount' => $data['amount'],
         'details' => $data['details'],
-        'ipn_url' => 'http://example.com/ipn_url.php',
-        'cancel_url' => 'http://example.com/cancel_url.php',
-        'success_url' => 'http://example.com/success_url.php',
+        'ipn_url' => 'https://your-project-name.vercel.app/api/ipn_url.php',
+        'cancel_url' => 'https://your-project-name.vercel.app/api/cancel_url.php',
+        'success_url' => 'https://your-project-name.vercel.app/api/success_url.php',
         'public_key' => 'test_p6qr4pv8i8vaagp10a52cmju2mryphmlk1acdjt5bbr9ldihcg189',
         'site_name' => 'No Trade Investment',
-        //'site_logo' => 'http://yoursite.com/logo.png',
         'checkout_theme' => 'dark',
         'customer' => $data['customer']
     ];
